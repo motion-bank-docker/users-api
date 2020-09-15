@@ -1,0 +1,33 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "jwksUri": "https://example.auth0.com/.well-known/jwks.json",
+  "jwtOptions": {
+    "algorithms": ["RS256"],
+    "audience": ["http://localhost:3030"],
+    "ignoreExpiration": false,
+    "issuer": "https://example.auth0.com/"
+  },
+  "authentication": {
+    "entity": null,
+    "service": "admins",
+    "secret": "",
+    "authStrategies": ["admin"],
+    "oauth": {
+      "redirect": "/",
+      "admin": {
+        "entity": "admin",
+        "key": "",
+        "secret": "",
+        "subdomain": "example",
+        "scope": ["openid", "profile", "email"]
+      }
+    }
+  },
+  "mongodb": "mongodb://localhost:27017/users_api"
+}

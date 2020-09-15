@@ -1,0 +1,18 @@
+{
+  "jwksUri": "JWKS_URI",
+  "jwtOptions": {
+    "audience": "JWT_AUDIENCE",
+    "issuer": "JWT_ISSUER"
+  },
+  "authentication": {
+    "secret": "AUTH0_SECRET",
+    "oauth": {
+      "auth0": {
+        "key": "AUTH0_KEY",
+        "secret": "AUTH0_SECRET",
+        "subdomain": "AUTH0_SUBDOMAIN"
+      }
+    }
+  },
+  "mongodb": "MONGODB_URL"
+}
