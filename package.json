@@ -24,6 +24,9 @@
     "npm": ">= 3.0.0"
   },
   "scripts": {
+    "docker-build": "docker build -t motionbank/users-api:latest .",
+    "docker-push": "docker push motionbank/users-api:latest",
+    "docker-release": "npm run docker-build && npm run docker-push",
     "test": "npm run lint && npm run mocha",
     "lint": "eslint src/. test/. --config .eslintrc.json --fix",
     "dev": "nodemon src/",
