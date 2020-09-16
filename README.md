@@ -2,6 +2,8 @@
 
 > User Data API
 
+[![motion-bank-docker](https://circleci.com/gh/motion-bank-docker/users-api.svg?style=svg)](https://app.circleci.com/pipelines/github/motion-bank-docker/users-api)
+
 ## About
 
 This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
