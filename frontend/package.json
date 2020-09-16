@@ -6,6 +6,7 @@
   "author": "Motion Bank",
   "private": true,
   "scripts": {
+    "dev": "API_BASE_URL=http://localhost:3030/ quasar dev",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
