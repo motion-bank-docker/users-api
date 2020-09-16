@@ -4,10 +4,15 @@ aliases:
     command: |
       apk add --update --no-cache nodejs nodejs-npm python3 make g++ pkgconfig libsecret-dev
       npm config set unsafe-perm true
-      npm i -g npm
+      npm i -g npm @quasar/cli
       node --version
       npm --version
+      quasar --version
       npm install
+  - &build-frontend
+    name: Build frontend
+    command: |
+      cd frontend && npm i && quasar build
 
 version: 2
 jobs:
@@ -19,6 +24,7 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: *install-dependencies
+      - run: *build-frontend
       - run:
           name: Release Production Image
           command: |
