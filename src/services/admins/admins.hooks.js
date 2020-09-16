@@ -3,12 +3,12 @@ const { authenticate } = require('@feathersjs/authentication').hooks
 module.exports = {
   before: {
     all: [],
-    find: [authenticate('admin')],
-    get: [authenticate('admin')],
+    find: [authenticate('auth0')],
+    get: [authenticate('auth0')],
     create: [],
-    update: [authenticate('admin')],
-    patch: [authenticate('admin')],
-    remove: [authenticate('admin')]
+    update: [authenticate('auth0')],
+    patch: [authenticate('auth0')],
+    remove: [authenticate('auth0')]
   },
 
   after: {

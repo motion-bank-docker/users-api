@@ -14,18 +14,17 @@
     "issuer": "https://example.auth0.com/"
   },
   "authentication": {
-    "entity": null,
+    "entity": "admin",
     "service": "admins",
     "secret": "",
-    "authStrategies": ["admin"],
+    "authStrategies": ["auth0"],
     "oauth": {
-      "redirect": "/",
-      "admin": {
-        "entity": "admin",
+      "redirect": "/#/callback",
+      "auth0": {
         "key": "",
         "secret": "",
         "subdomain": "example",
-        "scope": ["openid", "profile", "email"]
+        "scope": ["openid", "email"]
       }
     }
   },

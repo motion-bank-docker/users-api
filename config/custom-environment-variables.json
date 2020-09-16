@@ -7,6 +7,7 @@
   "authentication": {
     "secret": "AUTH0_SECRET",
     "oauth": {
+      "redirect": "OAUTH_REDIRECT",
       "auth0": {
         "key": "AUTH0_KEY",
         "secret": "AUTH0_SECRET",

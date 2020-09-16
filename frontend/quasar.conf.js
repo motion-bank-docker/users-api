@@ -70,11 +70,14 @@ module.exports = function (/* ctx */) {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /node_modules/
+        }, {
+          test: /\.pug$/,
+          loader: 'pug-plain-loader'
         })
       },
 
       env: {
-        API_BASE_URL: JSON.stringify(process.env.API_BASE_URL || '/')
+        API_BASE_URL: process.env.API_BASE_URL || '/'
       }
     },
 
