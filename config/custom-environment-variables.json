@@ -9,6 +9,7 @@
     "oauth": {
       "redirect": "OAUTH_REDIRECT",
       "auth0": {
+        "redirect_uri": "AUTH0_REDIRECT_URI",
         "key": "AUTH0_KEY",
         "secret": "AUTH0_SECRET",
         "subdomain": "AUTH0_SUBDOMAIN"

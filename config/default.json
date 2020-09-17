@@ -21,6 +21,7 @@
     "oauth": {
       "redirect": "/#/callback",
       "auth0": {
+        "redirect_uri": null,
         "key": "",
         "secret": "",
         "subdomain": "example",
